@@ -6,9 +6,14 @@ console.log('Loaded!');
 var so = document.getElementById('first');
 so.innerHTML = "Just made some changes" ;
 
-//making the img move on click by adding an onclick event
+//making the img move on click
 
+var moveright = 0;
+function moveRight () {
+    moveright = moveright + 10;
+    pic.style.marginLeft = moveright +'px' ;
+}
 var pic = document.getElementById('madi');
 pic.onclick = function (){
-    pic.style.marginLeft = '200px';
+    var interval = setInterval(moveRight,100);
 };
