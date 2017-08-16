@@ -98,12 +98,12 @@ app.get('/submit-name', function(req, res){//URL : /submit-name?name=XXXXXX
 });
 
 //Because of some errors i just made it a comment
-/*app.get('/:articleName', function(req, res){
+app.get('/:articleName', function(req, res){
   // articleName == article-one
   // articles[articleName] == {} content in the object article-one
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
-});*/
+});
 
 
 app.get('/ui/style.css', function (req, res) {
