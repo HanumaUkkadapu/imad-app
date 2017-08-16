@@ -10,7 +10,7 @@ so.innerHTML = "Just made some changes" ;
 
 var moveright = 0;
 function moveRight () {
-    moveright = moveright + 5;
+    moveright = moveright + 1;
     pic.style.marginLeft = moveright +'px' ;
 }
 var pic = document.getElementById('madi');
