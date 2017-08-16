@@ -11,7 +11,7 @@ button.onclick = function (){
     request.onreadystatechange = function (){
           
         //checks the current status of request tha it tis successfully completed ( XMLHttpRequest.DONE )
-        if (requst.readyState === XMLHttpRequest.DONE ){
+        if (request.readyState === XMLHttpRequest.DONE ){
               
             //Take some action
             //checks that the request is successful or not
