@@ -97,12 +97,12 @@ app.get('/submit-name/:name', function(req, res){//URL : /submit-name?name=XXXXX
     res.send(JSON.stringify(names));
 });
 
-app.get('/:articleName', function(req, res){
+/*app.get('/:articleName', function(req, res){
   // articleName == article-one
   // articles[articleName] == {} content in the object article-one
   var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
-});
+});*/
 
 
 app.get('/ui/style.css', function (req, res) {
