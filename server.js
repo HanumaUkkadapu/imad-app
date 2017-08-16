@@ -97,7 +97,7 @@ app.get('/submit-name', function(req, res){//URL : /submit-name?name=XXXXXX
     res.send(JSON.stringify(names));
 });
 
-//Because of some errors i just made it a comment
+//If there is any error just make the next para as comment
 app.get('/:articleName', function(req, res){
   // articleName == article-one
   // articles[articleName] == {} content in the object article-one
