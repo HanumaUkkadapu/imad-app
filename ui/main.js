@@ -10,10 +10,10 @@ so.innerHTML = "Just made some changes" ;
 
 var moveright = 0;
 function moveRight () {
-    moveright = moveright + 10;
+    moveright = moveright + 5;
     pic.style.marginLeft = moveright +'px' ;
 }
 var pic = document.getElementById('madi');
 pic.onclick = function (){
-    var interval = setInterval(moveRight,100);
+    var interval = setInterval(moveRight,50);
 };
