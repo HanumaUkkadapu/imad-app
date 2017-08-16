@@ -88,7 +88,7 @@ app.get('/counter',function(req, res){
 });
 
 var names = [];
-app.get('/submit-name/:name', function(req, res){//URL : /submit-name?name=XXXXXX
+app.get('/submit-name', function(req, res){//URL : /submit-name?name=XXXXXX
     //get the name from the request object
     var name = req.query.name;
     names.push(name);
@@ -97,6 +97,7 @@ app.get('/submit-name/:name', function(req, res){//URL : /submit-name?name=XXXXX
     res.send(JSON.stringify(names));
 });
 
+//Because of some errors i just made it a comment
 /*app.get('/:articleName', function(req, res){
   // articleName == article-one
   // articles[articleName] == {} content in the object article-one
