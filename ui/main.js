@@ -19,7 +19,7 @@ btn.onclick = function (){
               var counter = request.responseText ;
               counter = counter + 1;
               span = document.getElementById('count');
-              span.innerHTML = counter;
+              span.innerHTML = counter.toString();
           }
           
       }
